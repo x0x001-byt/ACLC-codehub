@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ACLC CodeHub – Advance Learning Platform for ACLC Students </title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<header class="topnav">
+  <div class="topnav-brand">
+    <span class="logo-icon"> .·´¯`(>▂<)´¯`·.  </span>
+    <span class="logo-text">ACLC CodeHub</span>
+  </div>
+  <nav class="topnav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="lessons/01-introduction.html">Tutorial</a>
+    <a href="lessons/exercises.html">Exercises</a>
+    <a href="lessons/reference.html">Reference</a>
+  </nav>
+  <div class="topnav-right">
+    <a href="lessons/01-introduction.html" class="btn-start">Start Learning →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Learn Java, at Your own pace, at your own time</div>
+    <h1 class="hero-title">Advance Learning for Java Programmers<br><span class="accent">of ACLC Students and Others</span></h1>
+    <p class="hero-sub">A complete, beginner-friendly Java course with real code examples, and exercises for beginners and intermediate programmers.</p>
+    <div class="hero-cta">
+      <a href="lessons/01-introduction.html" class="btn-primary">Start Tutorial</a>
+      <a href="lessons/exercises.html" class="btn-secondary">Try Exercises</a>
+    </div>
+    <div class="hero-code-preview">
+      <div class="code-window">
+        <div class="code-titlebar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">Main.java</span>
+        </div>
+        <pre class="code-body"><span class="kw">public class</span> <span class="cls">Main</span> {
+  <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+    System.out.println(<span class="str">"Hello, Java World!"</span>);
+  }
+}</pre>
+        <div class="code-output">▶ Output: Hello, Java World!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK TOPICS -->
+<section class="topics-section">
+  <div class="container">
+    <h2 class="section-title">What You'll Learn</h2>
+    <p class="section-sub">From your first line of code to advanced OOP — every topic covered.</p>
+    <div class="topic-grid">
+      <a href="lessons/01-introduction.html" class="topic-card">
+        <div class="topic-icon">🚀</div>
+        <div class="topic-title">Introduction</div>
+        <div class="topic-desc">What is Java, JVM, JDK setup, first program</div>
+      </a>
+      <a href="lessons/02-syntax.html" class="topic-card">
+        <div class="topic-icon">📝</div>
+        <div class="topic-title">Syntax & Basics</div>
+        <div class="topic-desc">Variables, data types, operators, comments</div>
+      </a>
+      <a href="lessons/03-control-flow.html" class="topic-card">
+        <div class="topic-icon">🔀</div>
+        <div class="topic-title">Control Flow</div>
+        <div class="topic-desc">if/else, switch, loops: for, while, do-while</div>
+      </a>
+      <a href="lessons/04-methods.html" class="topic-card">
+        <div class="topic-icon">🔧</div>
+        <div class="topic-title">Methods</div>
+        <div class="topic-desc">Defining methods, parameters, return types, overloading</div>
+      </a>
+      <a href="lessons/05-oop.html" class="topic-card">
+        <div class="topic-icon">🏗️</div>
+        <div class="topic-title">OOP</div>
+        <div class="topic-desc">Classes, objects, constructors, inheritance, polymorphism</div>
+      </a>
+      <a href="lessons/06-arrays.html" class="topic-card">
+        <div class="topic-icon">📦</div>
+        <div class="topic-title">Arrays & Collections</div>
+        <div class="topic-desc">Arrays, ArrayList, HashMap, iterating</div>
+      </a>
+      <a href="lessons/07-strings.html" class="topic-card">
+        <div class="topic-icon">🔤</div>
+        <div class="topic-title">Strings</div>
+        <div class="topic-desc">String methods, StringBuilder, formatting</div>
+      </a>
+      <a href="lessons/08-exceptions.html" class="topic-card">
+        <div class="topic-icon">⚠️</div>
+        <div class="topic-title">Exceptions</div>
+        <div class="topic-desc">try/catch/finally, custom exceptions, throws</div>
+      </a>
+      <a href="lessons/exercises.html" class="topic-card topic-card--highlight">
+        <div class="topic-icon">🎯</div>
+        <div class="topic-title">Exercises</div>
+        <div class="topic-desc">Practice problems for every chapter</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- EXAMPLE STRIP -->
+<section class="example-strip">
+  <div class="container">
+    <h2 class="section-title">Code Examples — Right in the Browser</h2>
+    <p class="section-sub">Every lesson comes with copy-ready examples you can study and run.</p>
+    <div class="example-cards">
+      <div class="ex-card">
+        <div class="ex-label">Variables</div>
+        <pre class="ex-code"><span class="kw">int</span> age = <span class="num">25</span>;
+<span class="kw">String</span> name = <span class="str">"Alice"</span>;
+<span class="kw">boolean</span> isStudent = <span class="bool">true</span>;
+System.out.println(name + <span class="str">" is "</span> + age);</pre>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">For Loop</div>
+        <pre class="ex-code"><span class="kw">for</span> (<span class="kw">int</span> i = <span class="num">0</span>; i &lt; <span class="num">5</span>; i++) {
+  System.out.println(<span class="str">"Count: "</span> + i);
+}</pre>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Class & Object</div>
+        <pre class="ex-code"><span class="kw">class</span> <span class="cls">Dog</span> {
+  <span class="kw">String</span> name;
+  <span class="kw">void</span> <span class="fn">bark</span>() {
+    System.out.println(name + <span class="str">": Woof!"</span>);
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-icon"> </span>
+      <span class="logo-text">ACLC CodeHub</span>
+    </div>
+    <div class="footer-links">
+      <a href="lessons/01-introduction.html">Tutorial</a>
+      <a href="lessons/exercises.html">Exercises</a>
+      <a href="lessons/reference.html">Reference</a>
+    </div>
+    <p class="footer-copy">© 2026 ACLC CodeHub.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

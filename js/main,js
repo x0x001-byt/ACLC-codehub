@@ -1,0 +1,61 @@
+// ── JavaLearn main.js ──
+
+// Highlight active sidebar link
+document.querySelectorAll('.sidebar a').forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add('active');
+  }
+});
+
+// Copy code buttons
+document.querySelectorAll('.code-copy-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const pre = btn.closest('.code-block').querySelector('pre');
+    const text = pre.innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = '✓ Copied!';
+      btn.style.color = '#4CAF50';
+      setTimeout(() => { btn.textContent = 'Copy'; btn.style.color = ''; }, 1800);
+    });
+  });
+});
+
+// Exercise check + hint buttons
+document.querySelectorAll('.exercise-card').forEach(card => {
+  const checkBtn = card.querySelector('.btn-check');
+  const hintBtn  = card.querySelector('.btn-hint');
+  const hintText = card.querySelector('.hint-text');
+  const input    = card.querySelector('.exercise-input');
+  const feedback = card.querySelector('.exercise-feedback');
+  const answer   = card.dataset.answer;
+
+  if (checkBtn && answer && input) {
+    checkBtn.addEventListener('click', () => {
+      const val = input.value.trim().replace(/\s+/g, ' ');
+      const ans = answer.trim().replace(/\s+/g, ' ');
+      const ok  = val.toLowerCase() === ans.toLowerCase();
+      feedback.innerHTML = ok
+        ? '<span class="feedback-ok">✓ Correct! Well done.</span>'
+        : '<span class="feedback-err">✗ Not quite. Check the syntax and try again.</span>';
+    });
+  }
+
+  if (hintBtn && hintText) {
+    hintBtn.addEventListener('click', () => {
+      const shown = hintText.style.display === 'block';
+      hintText.style.display = shown ? 'none' : 'block';
+      hintBtn.textContent = shown ? 'Hint' : 'Hide Hint';
+    });
+  }
+});
+
+// Reference page filter
+const refFilter = document.getElementById('ref-filter');
+if (refFilter) {
+  refFilter.addEventListener('input', () => {
+    const q = refFilter.value.toLowerCase();
+    document.querySelectorAll('.lesson-table tbody tr').forEach(row => {
+      row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+  });
+}
