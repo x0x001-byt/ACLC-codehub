@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Syntax & Basics – JavaLearn</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="topnav">
+  <a href="../index.html" class="topnav-brand" style="text-decoration:none">
+    <span class="logo-icon"></span><span class="logo-text">ACLC CodeHub</span>
+  </a>
+  <nav class="topnav-links">
+    <a href="../index.html">Home</a>
+    <a href="01-introduction.html">Tutorial</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="reference.html">Reference</a>
+  </nav>
+  <div class="topnav-right"><a href="03-control-flow.html" class="btn-start">Next Lesson →</a></div>
+</header>
+
+<div class="lesson-layout">
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Getting Started</div>
+      <a href="01-introduction.html">Introduction</a>
+      <a href="02-syntax.html" class="active">Syntax</a>
+      <a href="03-control-flow.html">Control Flow</a>
+      <a href="04-methods.html">Methods</a>
+      <a href="05-oop.html">OOP</a>
+      <a href="06-arrays.html">Arrays &amp; Collections</a>
+      <a href="07-strings.html">Strings</a>
+      <a href="08-exceptions.html">Exceptions</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Practice</div>
+      <a href="exercises.html">Exercises</a>
+      <a href="reference.html">Reference</a>
+    </div>
+  </aside>
+
+  <main class="lesson-main">
+    <h1>Java Syntax</h1>
+    <p class="lesson-intro">In the previous chapter, Introduction, we created a Java file called <code>Main.java</code>, and we use the following code to print "Hello, World!" to the console.</p>
+    <h1>Example:</h1>
+    <div class="code-block">
+      <div class="code-block-header"><span class="code-block-label">Main.java</span><button class="code-copy-btn">Copy</button></div>
+      <pre><span class="kw">public class</span> <span class="cls">Main</span> {
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        System.out.println(<span class="str">"Hello, World!"</span>);
+    }
+}</pre>
+      <div class="output-line">▶ Output: Hello, World!</div>  
+    </div>
+
+    <h1>Explaination</h1>
+    <p>Every line of code that runs in Java must be inside a class. The class name should always start with an uppercase first letter. In our example above we named the class <code>Main</code>. (Take note that java is case-sensitive. <code>MyClass</code> and <code>myclass</code> would be treated as two different names).</p>
+    <p>The name of the Java file <strong>must match</strong> the class name, so since we called our class <code>Main</code>, the file must be saved as <code>Main.Java</code>. This is because Java used the class name to find and run your code. if the name don't match, then Java will give an error and the program wont run.</p>
+    <p>When saving the file, save it using the class name and add <code>java</code> to the end of the filename.<p>
+  
+
+
+  <h1>The main Method</h1>
+  <p>The <code>main()</code> method is the entry point of any Java program. It is where the program starts running:</p>
+  
+  <div class="code-block">
+    <div class="code-block-header"><span class="code-block-label">Main.java</span><button class="code-copy-btn">Copy</button></div>
+    <pre>
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) 
+      <pre>
+  </div>
+    <p>Any code placed inside the <code>main()</code> method will be executed.</p>
+  
+
+  <h1>System.out.println()</h1>
+  <p>Inside the <code>main()</code> method, you can use the <code>println()</code> method to print text to the screen: </p>
+  <h2>Example:</h2>
+  <div class="code-block">
+    <div class="code-block-header"><span class="code-block-label">Main.java</span><button class="code-copy-btn">Copy</button></div>
+    <pre>
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        System.out.println(<span class="str">"Hello World!"</span>);
+    }<pre>
+  </div>
+  
+    <p>Think of <code>System.out.println()</code> as a single command that means <strong>"send this text to the screen"</strong>.</p>
+    <p><strong>Note:</strong> The curly braces <code>{}</code> mark the beginning and end of a block of code.</p>
+     
+
+    <P>Here's what eachy part means:</P>
+    <ul>
+      <li><code>System</code> — a built-in Java class that provides access to system resources.</li>
+      <li><code>out</code> — a static member of the <code>System</code> class that represents the standard "output" stream (the console).</li>
+      <li><code>println()</code> — a method that prints the specified text to the console, followed by a newline, short for "printline".</li>
+       <p>Always remember that each Java statement must end with a semicolon (<code>;</code>).</p>
+
+    
+    
+
+   
+    <div class="lesson-nav">
+      <a href="01-introduction.html" class="lesson-nav-btn">← Introduction</a>
+      <a href="03-control-flow.html" class="lesson-nav-btn">Control Flow →</a>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo-icon"></span><span class="logo-text">ACLC CodeHub</span></div>
+    <p class="footer-copy">© 2026 ACLC CodeHub.</p>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
